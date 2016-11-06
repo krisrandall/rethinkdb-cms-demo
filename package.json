@@ -1,0 +1,18 @@
+{
+  "name": "rethinkdb-cms-demo",
+  "version": "1.0.0",
+  "description": "Basic demo of the RethinkDB-CMS live feed ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "krisrandall",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/krisrandall/rethinkdb-cms-demo.git"
+  },
+  "dependencies": {
+    "rethinkdb-cms": "^1.0.4"
+  }
+}

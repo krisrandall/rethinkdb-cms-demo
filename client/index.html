@@ -1,0 +1,23 @@
+<html>
+
+	<head>
+		<title>rethinkdb-cms-demo</title>
+	</head>
+
+	<body>
+
+		<div id="results"></div>
+
+		<script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+		<script>
+		var socket = io.connect('http://localhost:4000');
+		socket.on('update', function (data) {
+			console.log("update", data);
+		    document.getElementById('results').innerHTML += 
+		    			'<h1>'+data.table+' update</h1>' +
+		                '<pre>'+JSON.stringify(data.new_val,2)+'</pre> <hr/>';
+		});
+		</script> 
+
+	</body>
+</html>
